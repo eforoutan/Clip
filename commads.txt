@@ -1,0 +1,10 @@
+python .\clip_shp.py "C:/CWL/spatial/Clip/input_shapefile/OK_Counties.shp" "C:/CWL/spatial/Clip/clip_shapefile/OK_metropolitans.shp"
+
+docker build -t eforoutan/clip_shp:latest .
+
+
+
+docker push eforoutan/clip_shp  
+
+cwltool clip_shp.cwl clip_shp.yml
+

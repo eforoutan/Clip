@@ -1,0 +1,7 @@
+input_shapefile:
+  class: Directory
+  path: input_shapefile
+
+clip_shapefile:
+  class: Directory
+  path: clip_shapefile
